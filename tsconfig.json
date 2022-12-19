@@ -3,7 +3,6 @@
   "ts-node": {
     "transpileOnly": true
   },
-  "plugins": [{ "name": "typescript-plugin-css-modules" }],
   "include": ["./src/**/*.*", "./src/**/*.d.ts"],
   "exclude": [
     "node_modules",
@@ -45,6 +44,11 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "incremental": true,
-    "noErrorTruncation": true
+    "noErrorTruncation": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
   }
 }
