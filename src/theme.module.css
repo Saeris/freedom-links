@@ -100,15 +100,15 @@
   position: relative;
   display: flex;
   align-items: center;
-  gap: 2.4rem;
+  gap: 1.6rem;
   width: 100%;
-  padding-inline: 2.4rem;
+  padding-inline: 1.6rem;
   padding-block: 0.8rem;
   border: 0.1rem solid hsla(0, 0%, 100%, 0.25);
   border-radius: 0.8rem;
   background-blend-mode: luminosity;
   color: hsla(225, 6%, 96%, 0.9);
-  font-size: 3.6rem;
+  font-size: 2.4rem;
   font-weight: 600;
   letter-spacing: calc((10 / 100) * 1em);
   text-transform: uppercase;
@@ -129,8 +129,8 @@
   }
 
   svg {
-    width: 3.2rem;
-    height: 3.2rem;
+    width: 2.4rem;
+    height: 2.4rem;
   }
 
   &:hover,
