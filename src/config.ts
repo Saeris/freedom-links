@@ -14,6 +14,12 @@ export const config = {
    * Links must be a URL.
    */
   links: [
+    // You'll want to delete this first entry, unless you
+    // want a deploy link on your site!
+    [
+      `Vercel`,
+      `https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fsaeris%2Ffreedom-links`
+    ],
     [`Twitter`, ``],
     [`Facebook`, ``],
     [`Instagram`, ``],
