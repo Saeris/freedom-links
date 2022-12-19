@@ -6,6 +6,9 @@
 /* Use % based heights*/
 html,
 body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   height: 100%;
   height: -webkit-fill-available;
   height: 100dvh;
@@ -73,11 +76,4 @@ a {
 ul {
   padding: 0;
   margin: 0;
-}
-
-#__next {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
 }

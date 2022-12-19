@@ -3,8 +3,7 @@
   "ts-node": {
     "transpileOnly": true
   },
-  "plugins": [{ "name": "typescript-plugin-css-modules" }],
-  "include": ["./src/**/*.*", "./src/**/*.d.ts"],
+  "include": ["./src/**/*.*", "./src/**/*.d.ts", ".next/types/**/*.ts"],
   "exclude": [
     "node_modules",
     "**/__mocks__/**/*",
@@ -45,6 +44,14 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "incremental": true,
-    "noErrorTruncation": true
+    "noErrorTruncation": true,
+    "plugins": [
+      {
+        "name": "next"
+      },
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
   }
 }

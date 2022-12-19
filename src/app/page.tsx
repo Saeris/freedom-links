@@ -1,15 +1,16 @@
+import React from "react";
 import Image from "next/image";
-import type { NextPage } from "next/types";
 import * as icons from "react-icons/si";
 import { config } from "../config";
+import avatar from "../../public/avatar.png";
 import styles from "../theme.module.css";
 
-const Home: NextPage = () => (
+const Home: React.FC = () => (
   <main className={styles.container}>
     <article className={styles.cell}>
       <figure className={styles.profile}>
         <div className={styles.avatar}>
-          <Image alt={config.name} src="/avatar.png" width={128} height={128} />
+          <Image alt={config.name} src={avatar} />
         </div>
         <figcaption className={styles.about}>
           <h1 className={styles.name}>{config.name}</h1>
@@ -26,7 +27,12 @@ const Home: NextPage = () => (
         }
         return (
           <li key={platform} className={styles.cell}>
-            <a className={styles.socialLink} href={url}>
+            <a
+              className={styles.socialLink}
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Icon />
               {label ?? platform}
             </a>
@@ -37,4 +43,5 @@ const Home: NextPage = () => (
   </main>
 );
 
+// eslint-disable-next-line import/no-default-export
 export default Home;
