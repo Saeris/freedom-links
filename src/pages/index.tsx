@@ -18,17 +18,17 @@ const Home: NextPage = () => (
       </figure>
     </article>
     <ul className={styles.links}>
-      {config.links.map(([service, url]) => {
+      {config.links.map(({ platform, url, label }) => {
         // eslint-disable-next-line import/namespace
-        const Icon = icons[`Si${service}`];
+        const Icon = icons[`Si${platform}`];
         if (!url.length) {
           return null;
         }
         return (
-          <li key={service} className={styles.cell}>
+          <li key={platform} className={styles.cell}>
             <a className={styles.socialLink} href={url}>
               <Icon />
-              {service}
+              {label ?? platform}
             </a>
           </li>
         );

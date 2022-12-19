@@ -2,7 +2,7 @@ import React from "react";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { config } from "../config";
-import "../reset.css";
+import "../internals/reset.css";
 
 const _app: React.FC<AppProps> = ({ Component, pageProps }) => (
   <>
